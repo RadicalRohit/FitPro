@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>FitProHub</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-3 text-muted pt-4  border rounded">
+                <input class="form-control mb-4" type="text" placeholder=" Search for program ">
+
+
+
+
+                <ul class=" list-unstyled m-1 program-list">
+                    <li class="mb-3">Sub-Program 1</li>
+                    <li class="mb-3">Sub-Program 2
+
+                        <ul class=" list-unstyled">
+                            <li class="ml-4 mb-2">Section 1 </li>
+                            <li class="ml-4 mb-2">Section 2 </li>
+                            <li class="ml-4 mb-2">Section 3 </li>
+                            <ul class=" list-unstyled">
+                                <li class="ml-5 mb-2">Content 1 </li>
+                                <li class="ml-5 mb-2">Content 2 </li>
+                                <li class="ml-5 mb-2">Content 3 </li>
+                                <li class="ml-5 mb-2">Content 4 </li>
+                                <li class="ml-5 mb-2">Content 5 </li>
+                            </ul>
+                            <li class="ml-4 mb-2">Section 4 </li>
+                            <li class="ml-4 mb-2">Section 5 </li>
+                        </ul>
+
+                    </li>
+                    <li class="mb-3">Sub-Program 1</li>
+                    <li class="mb-3">Sub-Program 1</li>
+                    <li class="mb-3">Sub-Program 1</li>
+
+
+                </ul>
+            </div>
+            <div class="col-9 ">
+                <div class="  ">
+
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="text-muted">" Sub-program Name "</h4>
+                        </div>
+
+                        <div class="card-body">
+
+
+                            <textarea class="form-control mb-4" id="exampleFormControlTextarea1" type="text" placeholder="Enter Sub-Program Description " rows="3"></textarea>
+
+                            <button type="button" class="btn-sm btn-danger btn-lg btn-block mb-2" data-toggle="collapse" href="#add-section">+ Add Section</button>
+
+                            <div class="add-section" class="collapse" id="add-section">
+
+                                <input class="form-control mb-3" type="text" placeholder=" Enter Section Name ">
+
+
+                                <div class="mr-5 ml-5 mt-2">
+                                    <button type="button" class="btn btn-danger btn-sm btn-block mb-2" data-toggle="collapse" href="#add-content">+ Add Content</button>
+
+
+                                    <div id="add-content" class="collapse">
+
+                                        <input class="form-control mb-1" type="text" placeholder="Enter Content Name ">
+
+
+                                        <textarea class="form-control mb-1" id="exampleFormControlTextarea1" type="text" placeholder="Enter Description  " rows="3"></textarea>
+
+
+
+                                        <div class="form-group mt-3 ">
+                                            <label>A-La Card Price
+                                                <select class="" id="exampleFormControlSelect1">
+                                                    <option>1.4 $</option>
+                                                    <option>2.4 $</option>
+                                                    <option>3.4 $</option>
+                                                    <option>4.4 $</option>
+                                                    <option>5.4 $</option>
+                                                </select>
+                                            </label>
+
+
+                                        </div>
+                                        <button type="button" class="btn btn-danger btn-sm ">+ Add media</button>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="mt-5 ">
+                                <a href="#" class="card-link ">Upload</a>
+                                <a href="#" class="card-link text-muted">Discard</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col text-muted m-3  p-3 border rounded  file-upload justify-content-between bg-light">
+                <h5 class="text-center">Upload media <small>drag and drop here</small></h5>
+
+                <div class="custom-file">
+                    
+
+                    <div class="btn-group btn-group-toggle d-flex justify-content-center p-3" data-toggle="buttons">
+                        <label class="btn btn-danger active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> All
+                        </label>                        
+                        <label class="btn btn-danger active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fas fa-camera-retro"></i>
+                        </label>
+                        <label class="btn btn-danger">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fas fa-video"></i>
+                        </label>
+                        <label class="btn btn-danger">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> <i class="far fa-file"></i>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="p-3 ">
+
+                    <div class="uploaded-file rounded" style="background-image: url(img/Reasons-why-many-Gyms-Fail.jpg)"></div>
+                    <img src="" />
+
+                    <div class="uploaded-file rounded" style="background-image: url(img/Reasons-why-many-Gyms-Fail.jpg)"></div>
+                    <img src="" />
+
+                    <div class="uploaded-file rounded" style="background-image: url(img/Reasons-why-many-Gyms-Fail.jpg)"></div>
+                    <img src="" />
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+    <script src="js/script.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

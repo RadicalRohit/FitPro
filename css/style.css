@@ -1,0 +1,19 @@
+
+.uploaded-file {
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 5px;
+    
+    
+}
+
+
+.program-list li::after  {
+    
+  content: attr(data-done) "<i class="far fa-times-circle"></i> "; /* This gets inserted before the email address */
+}
+
